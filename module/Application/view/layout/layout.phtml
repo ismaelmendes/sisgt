@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?php echo $this->headTitle('SISGT')?>
 
         <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
 
@@ -20,7 +20,24 @@
 
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- HEADER -->
+        <header class="wrap basa-header">
+            <div class="container">
+            <!-- LOGO -->
+             <div class="row">
+              <div class="span8 basa-sisgt">
+               
+              </div>
+              <div class="span4 basa-logo">
+               
+              </div>
+            </div>
+            <!-- //LOGO -->    
+             </div> 
+        </header>
+<!-- //HEADER -->
+    
+        <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -28,15 +45,34 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Skeleton Application') ?></a>
-                    <div class="nav-collapse collapse">
+                               
+                 <!--    <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('SISGT') ?></a>--> 
+                    <div class="collapse nav-collapse ">
                         <ul class="nav">
                             <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                             <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate('Cadastro') ?><b class="caret"></b></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#"><?php echo $this->translate('Area') ?></a></li>
+                                    <li><a href="#"><?php echo $this->translate('Categoria') ?></a></li>
+                                    <li><a href="#"><?php echo $this->translate('Evento') ?></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><?php echo $this->translate('Treinamento') ?></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><?php echo $this->translate('Turma') ?></a></li>
+                                    <li><a href="#"><?php echo $this->translate('Participantes') ?></a></li>
+                                  </ul>
+                             </li>
+                            <li class="inactive"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Consultas') ?></a></li>
+                            <li class="inactive"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Relatórios') ?></a></li>
+                            <li class="inactive"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Administração') ?></a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
+             
                 </div>
             </div>
         </div>
+        
         <div class="container">
             <?php echo $this->content; ?>
             <hr>

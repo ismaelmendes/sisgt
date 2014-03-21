@@ -1,8 +1,27 @@
 body {
-    padding-top: 60px;
+   /* padding-top: 60px; */
     padding-bottom: 40px;
 }
 
+.basa-header {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-image: url("../images/topo_fundo.jpg");
+	background-repeat: repeat-x; 
+	height: 66px; 
+}
+
+.basa-sisgt{
+	 background: url("../images/header_sisgt.png") no-repeat scroll 0 0px transparent; 
+	 height: 66px; 
+	 margin-top: 0px;
+}
+
+.basa-logo{
+	 background: url("../images/logo_bancoamazonia.png") no-repeat scroll 0 20px transparent; 
+	 height: 66px; 
+	 margin-top: 0px;
+}
 .zf-green {
     color: #68b604;
 }
